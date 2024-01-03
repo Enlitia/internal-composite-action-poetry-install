@@ -1,0 +1,12 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: trailing-whitespace
+    files: action.yml
+- repo: https://github.com/compilerla/conventional-pre-commit
+  rev: eb90c19
+  hooks:
+    - id: conventional-pre-commit
+      stages: [commit-msg]
+      args: []
